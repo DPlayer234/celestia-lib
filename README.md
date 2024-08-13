@@ -2,8 +2,6 @@
 
 Born and copied from a currently on-hold personal project.
 
-License TODO
-
 I might add better documentation in the future.
 
 # CelestiaCS.Analyzers
