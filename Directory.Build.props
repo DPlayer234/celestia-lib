@@ -1,0 +1,27 @@
+﻿<Project>
+  <!-- Include our shared analyzers in every non-analyzer project. -->
+  <ItemGroup Condition="$(IsRoslynComponent) != true">
+    <ProjectReference Include="..\..\analyzers\CelestiaCS.Analyzers\CelestiaCS.Analyzers.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <!-- We want to remove JSImportGenerator by default, becuase it takes a good deal of compilation time -->
+    <RemoveAnalyzer Include="Microsoft.Interop.JavaScript.JSImportGenerator" />
+    <RemoveAnalyzer Include="AWSSDK.SecurityToken.CodeAnalysis" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <CoreCompileDependsOn>$(CoreCompileDependsOn);_DisableAnalyzers</CoreCompileDependsOn>
+    <UseArtifactsOutput>true</UseArtifactsOutput>
+  </PropertyGroup>
+  
+  <Target Name="_DisableAnalyzers" DependsOnTargets="ResolveTargetingPackAssets" Inputs="@(RemoveAnalyzer)" Outputs="|%(Identity)|">
+    <PropertyGroup>
+      <_RemoveAnalyzer>%(RemoveAnalyzer.Identity)</_RemoveAnalyzer>
+    </PropertyGroup>
+    <ItemGroup>
+      <Analyzer Remove="$(_RemoveAnalyzer)"/>
+      <Analyzer Remove="@(Analyzer)" Condition="'%(Analyzer.Filename)' == '$(_RemoveAnalyzer)'"/>
+    </ItemGroup>
+  </Target>
+</Project>

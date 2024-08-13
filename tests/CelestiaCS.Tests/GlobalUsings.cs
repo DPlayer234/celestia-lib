@@ -1,0 +1,9 @@
+﻿global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Threading.Tasks;
+global using CelestiaCS.Lib;
+global using CelestiaCS.Lib.Collections;
+global using CelestiaCS.Lib.Linq;
+global using CelestiaCS.Lib.Random;
+global using NUnit.Framework;

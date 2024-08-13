@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FormatString>
+	<Format>
+		<summary>
+			Applies the format with the given values and creates a <see cref="string"/>.
+		</summary>
+	</Format>
+	<FormatTemp>
+		<summary>
+			Applies the format with the given values and creates a <see cref="T:CelestiaCS.Lib.Format.TempString"/>.
+		</summary>
+	</FormatTemp>
+	<TryFormat>
+		<summary>
+			Applies the format with the given values and tries to write it to a span.
+		</summary>
+		<param name="destination"> The destination span to write to. </param>
+		<param name="charsWritten"> The amount of characters written to the span. </param>
+		<returns> Whether formatting was successful. </returns>
+	</TryFormat>
+	<AppendFormat>
+		<summary>
+			Appends the format, using the given values, to the string builder.
+		</summary>
+		<param name="builder"> The builder to append the text to. </param>
+		<param name="fmt"> The format the use. </param>
+	</AppendFormat>
+	<VarArgs>
+		<param name="args"> The arguments to fill the holes with. </param>
+	</VarArgs>
+	<SingleArg>
+		<param name="arg"> The argument to fill the hole with. </param>
+		<typeparam name="T"> The type of the argument. </typeparam>
+	</SingleArg>
+	<MultiArgs>
+		<param name="arg0"> The first argument to fill the hole with. </param>
+		<param name="arg1"> The second argument to fill the hole with. </param>
+		<param name="arg2"> The third argument to fill the hole with. </param>
+		<param name="arg3"> The forth argument to fill the hole with. </param>
+		<typeparam name="T0"> The type of the first argument. </typeparam>
+		<typeparam name="T1"> The type of the second argument. </typeparam>
+		<typeparam name="T2"> The type of the third argument. </typeparam>
+		<typeparam name="T3"> The type of the fourth argument. </typeparam>
+	</MultiArgs>
+
+</FormatString>
