@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9B706A07
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CelestiaCS.Tests", "tests\CelestiaCS.Tests\CelestiaCS.Tests.csproj", "{0D8480BC-454C-4FF8-AF50-70B5C6D520E3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CelestiaCS.Lib.Services", "src\CelestiaCS.Lib.Services\CelestiaCS.Lib.Services.csproj", "{2190466E-6835-4AF1-8903-6850322C685E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,14 @@ Global
 		{0D8480BC-454C-4FF8-AF50-70B5C6D520E3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0D8480BC-454C-4FF8-AF50-70B5C6D520E3}.Release|x86.ActiveCfg = Release|Any CPU
 		{0D8480BC-454C-4FF8-AF50-70B5C6D520E3}.Release|x86.Build.0 = Release|Any CPU
+		{2190466E-6835-4AF1-8903-6850322C685E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2190466E-6835-4AF1-8903-6850322C685E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2190466E-6835-4AF1-8903-6850322C685E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2190466E-6835-4AF1-8903-6850322C685E}.Debug|x86.Build.0 = Debug|Any CPU
+		{2190466E-6835-4AF1-8903-6850322C685E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2190466E-6835-4AF1-8903-6850322C685E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2190466E-6835-4AF1-8903-6850322C685E}.Release|x86.ActiveCfg = Release|Any CPU
+		{2190466E-6835-4AF1-8903-6850322C685E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +65,7 @@ Global
 		{E883F2CA-18BC-4394-99C1-0625E44D9F2E} = {E80FE70A-EA63-4CE8-9610-E04718ED8EA0}
 		{AFC81197-3573-40C6-B77B-F10E1F31CD98} = {BE8B2B14-A430-4B2E-84DE-3E510BB0EDBE}
 		{0D8480BC-454C-4FF8-AF50-70B5C6D520E3} = {9B706A07-7BB5-49A7-8FC7-58A4391DE033}
+		{2190466E-6835-4AF1-8903-6850322C685E} = {E80FE70A-EA63-4CE8-9610-E04718ED8EA0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {098FB0D1-0090-4FA6-A4CD-F64CCAF10A5C}
